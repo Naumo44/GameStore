@@ -1,0 +1,25 @@
+{% extends 'playstore/base.html' %}
+{% load static %}
+
+{% block title %}Playstore{% endblock %}
+
+{% block header %}
+<center><img src="{% static 'playstore/images/header.png' %}" alt="Лого ебейшее"></center>
+<h2>Тут будут ебейшие игры, пока что по категориям, потом посмотрим</h2>
+{% endblock %}
+
+{% block content %}
+{% for cat in cats %}
+	<h2>{{cat}}</h2>
+	<p>Описание категории</p>
+	<img src="{% static 'playstore/images/cat_logo.jpg' %}" alt="Заглушка для лого категории">
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+<p>Ебаные ноги</p>
+{% endblock %}
+
+{% block sidebar %}
+<p>Правый боковой</p>
+{% endblock %}

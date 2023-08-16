@@ -1,0 +1,25 @@
+{% extends 'playstore/base.html' %}
+{% load static %}
+
+{% block title %}Playstore{% endblock %}
+
+{% block header %}
+<center><img src="{% static 'playstore/images/header.png' %}" alt="Лого ебейшее"></center>
+<h2>Тут будут ебейшие игры, пока что по категориям, потом посмотрим</h2>
+{% endblock %}
+
+{% block content %}
+<h1>{{name}}</h1>
+<img src="{% static 'playstore/images/game_logo.jpg' %}" alt="Лого конкретной игры">
+<p>Длинное описание ахуенной игры. Игра блять всех времен и народов, короче</p>
+<p>Хештеги/категории/опознавательные знаки</p>
+<p>Рейтинг и отзывы (возможно)</p>
+{% endblock %}
+
+{% block footer %}
+<p>Ебаные ноги</p>
+{% endblock %}
+
+{% block sidebar %}
+<p>Правый боковой</p>
+{% endblock %}
